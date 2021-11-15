@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-green: #49a314;
+    --clr-grey: #e2e2e2;
+    --clr-bg:  #eeffe8;
+    --clr-black: #2B2B28;
+    --clr-white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 720px;
+    font-family: 'Montagu Slab', serif;
+    font-size: 1.2rem;
+    background: var(--clr-bg);
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+    margin: 1em;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--clr-green);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#demo {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.piano {
+    display: flex;
+    margin: 0 2em;
+}
+
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    position: relative;
+}
+
+.note {
+    position: absolute;
+    bottom: calc(var(--width) / 2.4);
+    left: calc(var(--width) / 2.4);
+}
+
+.white {
+    --width: 80px;
+    background-color: var(--clr-white);
+    border: 1px solid #333;
+}
+
+.white.active {
+    background-color: var(--clr-grey);
+}
+
+.black {
+    --width: 50px;
+    background-color: var(--clr-black);
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+/* .black.active {
+    background-color: #333;
+} */
+
+#lyrics {
+    width: 420px;
+    height: 240px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 1em;
+    background-color: var(--clr-grey);
+}
+
+#column-one, #column-two, #column-three, #column-four, #column-five, #column-six, #column-optional {
+    width: 90px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#column-optional{
+    display: none;
+}
+
+.word {
+    background-color: #fff;
+    width: 90px;
+    height: 25px;
+    letter-spacing: 2px;
+    color: var(--clr-green);
+}
+
+#letter-note-one, #letter-note-two, #letter-note-three, #letter-note-four, #letter-note-five, #letter-note-six, #letter-note-optional {
+    color: var(--clr-black);
+    font-size: 1.2rem;
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+#first-next-line, #second-next-line, #third-next-line, #fourth-next-line {
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 1em;
+    opacity: 0.3;
+    font-size: 0.8rem;
+    color: var(--clr-green)
+}

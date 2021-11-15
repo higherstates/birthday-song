@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Happy Birthday!</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Text -->
+    <div class="text">
+      <h1 class='title'>Happy Birthday To You! 🥳</h1>
+      <p id='demo'>Use the bottom line of your keyboard to play 🎹</p>
+    </div>
+
+    <!-- Piano -->
+    <div class="piano">
+      <div data-note="C" class="key white">
+        <div class="note">C</div>
+      </div>
+      <div class="key black"></div>
+      <div data-note="D" class="key white">
+        <div class="note">D</div>
+      </div>
+      <div class="key black"></div>
+      <div data-note="E" class="key white">
+        <div class="note">E</div>
+      </div>
+      <div data-note="F" class="key white">
+        <div class="note">F</div>
+      </div>
+      <div data-note="Gb" class="key black"></div>
+      <div data-note="G" class="key white">
+        <div class="note">G</div>
+      </div>
+      <div class="key black"></div>
+      <div data-note="A" class="key white">
+        <div class="note">A</div>
+      </div>
+      <div class="key black"></div>
+      <div data-note="B" class="key white">
+        <div class="note">B</div>
+      </div>
+      <div data-note="high-C" class="key white">
+        <div class="note">C</div>
+      </div>
+    </div>
+
+    <audio id="C" src="./resources/notes/C.mp3"></audio>
+    <audio id="D" src="./resources/notes/D.mp3"></audio>
+    <audio id="E" src="./resources/notes/E.mp3"></audio>
+    <audio id="F" src="./resources/notes/F.mp3"></audio>
+    <audio id="G" src="./resources/notes/G.mp3"></audio>
+    <audio id="A" src="./resources/notes/A.mp3"></audio>
+    <audio id="B" src="./resources/notes/B.mp3"></audio>
+    <audio id="high-C" src="./resources/notes/high-C.mp3"></audio>
+
+
+      
+      
+      <!-- Lyrics -->
+    <div id='lyrics'>
+      <div id='column-one'>
+        <div class="word one">HAP-</div>
+        <div id="letter-note-one">G</div>
+      </div>
+      <div id='column-two'>
+        <div class="word two">PY</div>
+        <div id="letter-note-two">G</div>
+      </div>
+      <div id='column-three'>
+        <div class="word three">BIRTH-</div>
+        <div id="letter-note-three">A</div>
+      </div>
+      <div id='column-four'>
+        <div class="word four">DAY</div>
+        <div id="letter-note-four">G</div>
+      </div>
+      <div id='column-five'>
+        <div class="word five" id="word-five">TO</div>
+        <div id="letter-note-five">C</div>
+      </div>
+      <div id='column-six'>
+        <div class="word six" id="word-six">YOU</div>
+        <div id="letter-note-six">B</div>
+      </div>
+      <div id='column-optional' class='column-optional'>
+        <div class="word optional">END</div>
+        <div id="letter-note-optional">A</div>
+      </div>
+
+      <button id="first-next-line">Line 2</button>
+      <button id="second-next-line">Line 3</button>
+      <button id="third-next-line">Line 4</button>
+      <button id="fourth-next-line">Reset</button>
+    </div>
+    <footer>Created by higherstates &copy; 2021</footer>
+    <script  src="index.js"></script>
+  </body>
+</html>
